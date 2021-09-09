@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import ch.zli.m223.punchclock.domain.Entry;
+import ch.zli.m223.punchclock.domain.Entry.Entry;
 import ch.zli.m223.punchclock.service.EntryService;
 
 @Path("/entries")
