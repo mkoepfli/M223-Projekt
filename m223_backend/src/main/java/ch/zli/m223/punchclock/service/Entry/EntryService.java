@@ -1,4 +1,4 @@
-package ch.zli.m223.punchclock.service;
+package ch.zli.m223.punchclock.service.Entry;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;

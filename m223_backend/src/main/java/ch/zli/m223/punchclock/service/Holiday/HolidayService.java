@@ -24,7 +24,7 @@ public class HolidayService {
 
     @SuppressWarnings("unchecked")
     public List<Holiday> findAll() {
-        var query = entityManager.createQuery("FROM Entry");
+        var query = entityManager.createQuery("FROM Holiday");
         return query.getResultList();
     }
 }
