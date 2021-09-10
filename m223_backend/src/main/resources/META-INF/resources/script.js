@@ -15,26 +15,49 @@ const createEntry = (e) => {
     fetch(`${URL}/entries`, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " +   localStorage.getItem("bearer-token")
         },
         body: JSON.stringify(entry)
     }).then((result) => {
+        if(result.status==401)
+        {
+           throw new Error(response.status)
+        }
         result.json().then((entry) => {
             entries.push(entry);
             renderEntries();
         });
-    });
+    }).catch((error) => {
+        if (window.confirm('Bitte Loggen Sie sich ein mit dem Button "Ok"')) 
+        {
+        window.location.href='http://localhost:8080';
+        };
+       });
 };
 
 const indexEntries = () => {
     fetch(`${URL}/entries`, {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " +   localStorage.getItem("bearer-token")
+        },
     }).then((result) => {
+        if(result.status==401)
+        {
+           throw new Error(response.status)
+        }
         result.json().then((result) => {
             entries = result;
             renderEntries();
         });
-    });
+    }).catch((error) => {
+        if (window.confirm('Bitte Loggen Sie sich ein mit dem Button "Ok"')) 
+        {
+        window.location.href='http://localhost:8080';
+        };
+       });
     renderEntries();
 };
 

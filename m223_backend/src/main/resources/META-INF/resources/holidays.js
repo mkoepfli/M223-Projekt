@@ -16,7 +16,7 @@ const createHoliday = (e) => {
         },
         body: JSON.stringify(holiday)
     }).then((result) => {
-        if(response.status==401)
+        if(result.status==401)
         {
            throw new Error(response.status)
         }
@@ -36,7 +36,7 @@ const indexHolidays = () => {
             "Authorization": "Bearer " +   localStorage.getItem("bearer-token")
         }
     }).then((result) => {
-        if(response.status==401)
+        if(result.status==401)
        {
           throw new Error(response.status)
        }

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c7c25a-f200-45a0-83dc-ed74abfe95cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/AuthentificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/SecuredController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/SecuredController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/entries.html" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/entries.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/holidays.html" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/holidays.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/holidays.js" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/holidays.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,7 @@
       <workItem from="1631187003652" duration="8000" />
       <workItem from="1631187027210" duration="37000" />
       <workItem from="1631189816937" duration="2204000" />
+      <workItem from="1631257165375" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631176220041</created>
@@ -88,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631197708969</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added views and corrected code">
+      <created>1631257244982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631257244982</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +111,8 @@
     <MESSAGE value="added Models" />
     <MESSAGE value="removed EntryController" />
     <MESSAGE value="added Controllers and changed id names" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Controllers and changed id names" />
+    <MESSAGE value="added views and corrected code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added views and corrected code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631187054064">
@@ -110,22 +123,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631180585847" />
-    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631197707878">
+    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631257243686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631197707878" />
-    <state x="182" y="87" key="DiffContextDialog" timestamp="1631190255966">
+    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631257243686" />
+    <state x="182" y="87" key="DiffContextDialog" timestamp="1631257209037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="182" y="87" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631190255966" />
+    <state x="182" y="87" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631257209037" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1631187010264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631187010264" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631197718783">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631257249966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631197718783" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631257249966" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1631192338408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

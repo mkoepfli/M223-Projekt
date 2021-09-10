@@ -1,5 +1,7 @@
 package ch.zli.m223.punchclock.controller;
 
+import javax.inject.Inject;
+
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -16,6 +18,7 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import ch.zli.m223.punchclock.ViewModel.LoginResultViewModel;
 import ch.zli.m223.punchclock.ViewModel.LoginViewModel;
+import ch.zli.m223.punchclock.service.User.UserService;
 import io.smallrye.jwt.build.Jwt;
 
 /*
@@ -26,12 +29,19 @@ import io.smallrye.jwt.build.Jwt;
 @Path("/auth")
 public class AuthentificationController {
 
+    @Inject
+    UserService userService;
+
     @POST
     @Path("/login")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public LoginResultViewModel login(LoginViewModel loginViewModel){
-        if(loginViewModel.getUsername().equals("user") && loginViewModel.getPassword().equals("secure")){
+
+        var user = userService.getUser(loginViewModel.getUsername(), loginViewModel.getPassword());
+    
+
+        if(loginViewModel.getUsername().equals(user.getUsername()) && loginViewModel.getPassword().equals(user.getPasswort())){
             String token =
                     Jwt.issuer("https://zli.ch/issuer")
                             .upn("user@zli.ch")

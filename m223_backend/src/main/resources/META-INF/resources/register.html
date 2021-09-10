@@ -12,43 +12,42 @@
   <form id="form" method="post">
 
     <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Username" name="name" required>
+
+        <label for="surname"><b>Surname</b></label>
+        <input type="text" placeholder="Enter Username" name="surname" required>
+
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
-      <button type="submit">Login</button>
+      <button type="submit">Registrieren</button>
     </div>
 
   </form>
-  <br><br>
-  <a href="register.html">Registrieren</a>
   <script>
-    $("#form").submit(function (e) {
-      e.preventDefault();
 
-      var form = $(this);
-      var username = this.username.value
-      var password = this.password.value
       $("#form").submit(function (e) {
       e.preventDefault();
 
       var form = $(this);
       var username = this.username.value
       var password = this.password.value
+      var name = this.name.value
+      var surname = this.surname.value
 
       $.ajax({
         type: "POST",
-        url: "/auth/login",
+        url: "/users",
         contentType: "application/json",
-        data: JSON.stringify({ username: username, password: password }),
+        data: JSON.stringify({ username: username, passwort: password, name: name, surname: surname }),
         success: function (data) {
-          localStorage.setItem("bearer-token", data.token);
-          window.location.href = "http://localhost:8080/entries.html";
+          window.location.href = "http://localhost:8080";
         }
       });
-    });
     });
   </script>
 </body>
