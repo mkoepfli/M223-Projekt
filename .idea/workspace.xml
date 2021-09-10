@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d7c7c25a-f200-45a0-83dc-ed74abfe95cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/User/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/User/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,25 +40,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,7 +59,8 @@
       <workItem from="1631187003652" duration="8000" />
       <workItem from="1631187027210" duration="37000" />
       <workItem from="1631189816937" duration="2204000" />
-      <workItem from="1631257165375" duration="2992000" />
+      <workItem from="1631257165375" duration="3029000" />
+      <workItem from="1631282997460" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631176220041</created>
@@ -144,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631281214639</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added delete User">
+      <created>1631282604943</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631282604943</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +155,8 @@
     <MESSAGE value="Added register and edit User" />
     <MESSAGE value="removed frontend directory" />
     <MESSAGE value="added README" />
-    <option name="LAST_COMMIT_MESSAGE" value="added README" />
+    <MESSAGE value="added delete User" />
+    <option name="LAST_COMMIT_MESSAGE" value="added delete User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631187054064">
@@ -171,10 +167,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631281026959" />
-    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631281213922">
+    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631282604041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631281213922" />
+    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631282604041" />
     <state x="182" y="87" key="DiffContextDialog" timestamp="1631272053587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,10 +179,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631187010264" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631280975307">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631282610184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631280975307" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631282610184" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1631192338408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

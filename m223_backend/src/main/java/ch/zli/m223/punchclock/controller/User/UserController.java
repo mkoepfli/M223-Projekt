@@ -28,12 +28,15 @@ public class UserController {
     @Inject
     UserService userService;
 
+
+     //Get all User
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<User> list() {
         return userService.findAll();
     }
 
+    //Create User
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
@@ -41,6 +44,7 @@ public class UserController {
        return userService.createUser(user);
     }
 
+    //Update User
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
@@ -48,12 +52,14 @@ public class UserController {
        return userService.updateUser(user);
     }
 
+    //Delete User
     @DELETE
     @Path("/{id}")
     public void delete(@org.jboss.resteasy.annotations.jaxrs.PathParam Long id) {
         userService.deleteUser(id);
     }
 
+    //Edit User
     @POST
     @Path("/edit")
     @Produces(MediaType.APPLICATION_JSON)

@@ -23,12 +23,14 @@ public class HolidayController {
     @Inject
     HolidayService holidayService;
 
+     //Get all holidays
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Holiday> list() {
         return holidayService.findAll();
     }
 
+     //Create holidays
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)

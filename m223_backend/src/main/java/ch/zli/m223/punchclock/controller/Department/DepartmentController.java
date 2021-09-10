@@ -23,12 +23,14 @@ public class DepartmentController {
     @Inject
     DepartmentService departmentService;
 
+     //Get all Departments
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Department> list() {
         return departmentService.findAll();
     }
 
+     //Create Department
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
