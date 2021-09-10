@@ -21,6 +21,12 @@ public class User {
     @Column(nullable = false)
     private String passwort;
 
+    @Column(nullable = false)
+    private Long companyId;
+
+    @Column(nullable = false)
+    private Long deparmtentId;
+
     public Long getId() {
         return id;
     }
@@ -61,5 +67,20 @@ public class User {
         this.passwort = passwort;
     }
 
+    public Long getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Long companyId) {
+        this.companyId = companyId;
+    }
+
+    public Long getDepartmentId() {
+        return deparmtentId;
+    }
+
+    public void setDepartmentId(Long deparmtentId) {
+        this.deparmtentId = deparmtentId;
+    }
 
 }

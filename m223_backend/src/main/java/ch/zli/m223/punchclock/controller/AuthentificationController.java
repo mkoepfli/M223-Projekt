@@ -40,7 +40,6 @@ public class AuthentificationController {
 
         var user = userService.getUser(loginViewModel.getUsername(), loginViewModel.getPassword());
     
-
         if(loginViewModel.getUsername().equals(user.getUsername()) && loginViewModel.getPassword().equals(user.getPasswort())){
             String token =
                     Jwt.issuer("https://zli.ch/issuer")

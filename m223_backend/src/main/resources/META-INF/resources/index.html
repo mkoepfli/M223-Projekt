@@ -25,12 +25,6 @@
   <br><br>
   <a href="register.html">Registrieren</a>
   <script>
-    $("#form").submit(function (e) {
-      e.preventDefault();
-
-      var form = $(this);
-      var username = this.username.value
-      var password = this.password.value
       $("#form").submit(function (e) {
       e.preventDefault();
 
@@ -45,10 +39,11 @@
         data: JSON.stringify({ username: username, password: password }),
         success: function (data) {
           localStorage.setItem("bearer-token", data.token);
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
           window.location.href = "http://localhost:8080/entries.html";
         }
       });
-    });
     });
   </script>
 </body>

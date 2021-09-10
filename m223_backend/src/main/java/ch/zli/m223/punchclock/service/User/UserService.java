@@ -22,6 +22,12 @@ public class UserService {
         return user;
     }
 
+    @Transactional 
+    public User updateUser(User user) {
+        entityManager.merge(user);
+        return user;
+    }
+
     public User getUser(String username, String passwort) {
         var query = entityManager.createQuery("FROM User WHERE username='" +username +"' and passwort='" + passwort + "'");
         return (User) query.getSingleResult();

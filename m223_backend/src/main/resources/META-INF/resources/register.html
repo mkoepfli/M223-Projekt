@@ -24,6 +24,23 @@
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
+      <label for="company"><b>Firma</b></label>
+      <select name="company" id="company" required>
+        <option value="1">hosttech</option>
+        <option value="2">Sunrise</option>
+        <option value="3">Swisscom</option>
+        <option value="4">Telekom</option>
+      </select>
+
+      <label for="department"><b>Avteilung</b></label>
+      <select name="department" id="department" required>
+        <option value="1">IT</option>
+        <option value="2">Support</option>
+        <option value="3">Technik</option>
+        <option value="4">KV</option>
+        <option value="5">Putzkraft</option>
+      </select>
+
       <button type="submit">Registrieren</button>
     </div>
 
@@ -38,12 +55,15 @@
       var password = this.password.value
       var name = this.name.value
       var surname = this.surname.value
+      var company = this.company.value
+      var department = this.department.value
+      console.log(company)
 
       $.ajax({
         type: "POST",
         url: "/users",
         contentType: "application/json",
-        data: JSON.stringify({ username: username, passwort: password, name: name, surname: surname }),
+        data: JSON.stringify({ username: username, passwort: password, name: name, surname: surname, departmentId: department, companyId: company }),
         success: function (data) {
           window.location.href = "http://localhost:8080";
         }
