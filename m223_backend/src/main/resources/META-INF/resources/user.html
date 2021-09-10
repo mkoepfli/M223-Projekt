@@ -95,8 +95,8 @@
             e.preventDefault();
 
             var form = $(this);
-            var username = this.username.value
-            var password = this.password.value
+            var username = localStorage.getItem("username")
+            var password = localStorage.getItem("password")
             var id = this.id.value
 
             $.ajax({
@@ -105,7 +105,6 @@
                 contentType: "application/json",
                 data: JSON.stringify({ id: id, username: username, passwort: password}),
                 success: function (data) {
-            
                     window.location.href = "http://localhost:8080/logout.html";
                 }
             });

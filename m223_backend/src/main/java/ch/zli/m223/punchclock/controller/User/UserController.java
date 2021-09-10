@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -42,6 +43,13 @@ public class UserController {
     @Consumes(MediaType.APPLICATION_JSON)
     public User edit(User user) {
        return userService.updateUser(user);
+    }
+
+    @DELETE
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public User delete(User user) {
+       return userService.deleteUser(user);
     }
 
     @POST
