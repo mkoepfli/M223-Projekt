@@ -2,93 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c7c25a-f200-45a0-83dc-ed74abfe95cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/User/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/User/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/resources/META-INF/resources/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/.styleci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/cors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/sanctum.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/database/seeders/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/public/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m233_frontend/webpack.mix.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +18,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,7 +72,7 @@
       <workItem from="1631187003652" duration="8000" />
       <workItem from="1631187027210" duration="37000" />
       <workItem from="1631189816937" duration="2204000" />
-      <workItem from="1631257165375" duration="2038000" />
+      <workItem from="1631257165375" duration="2992000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631176220041</created>
@@ -210,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631280406783</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed frontend directory">
+      <created>1631280964397</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631280964397</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added README">
+      <created>1631281214639</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631281214639</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,21 +158,23 @@
     <MESSAGE value="added views and corrected code" />
     <MESSAGE value="Added User Controller, Model and View" />
     <MESSAGE value="Added register and edit User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added register and edit User" />
+    <MESSAGE value="removed frontend directory" />
+    <MESSAGE value="added README" />
+    <option name="LAST_COMMIT_MESSAGE" value="added README" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631187054064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631187054064" />
-    <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631180585847">
+    <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631281026959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631180585847" />
-    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631280405738">
+    <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631281026959" />
+    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631281213922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631280405738" />
+    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631281213922" />
     <state x="182" y="87" key="DiffContextDialog" timestamp="1631272053587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,10 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631187010264" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631280412772">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631280975307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631280412772" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631280975307" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1631192338408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

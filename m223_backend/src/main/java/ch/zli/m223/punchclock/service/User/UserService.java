@@ -28,10 +28,11 @@ public class UserService {
         return user;
     }
 
+
     @Transactional 
-    public User deleteUser(User user) {
-        entityManager.remove(user);
-        return user;
+    public void deleteUser(Long id) {
+        var deleteUser = entityManager.find(User.class, id);
+        entityManager.remove(deleteUser);
     }
 
     public User getUser(String username, String passwort) {

@@ -47,6 +47,7 @@
 
     </form>
     <form id="delete">
+        <input type="hidden" name="idDelete" id="idDelete">
         <button type="submit">Account Löschen</button>
     </form>
     <script>
@@ -64,6 +65,7 @@
                     $('#company').val(data.companyId);
                     $('#department').val(data.departmentId);
                     $('#id').val(data.id);
+                    $('#idDelete').val(data.id);
                 }
             });
         });
@@ -97,11 +99,11 @@
             var form = $(this);
             var username = localStorage.getItem("username")
             var password = localStorage.getItem("password")
-            var id = this.id.value
+            var id = this.idDelete.value
 
             $.ajax({
                 type: "DELETE",
-                url: "/users",
+                url: "/users/"+id,
                 contentType: "application/json",
                 data: JSON.stringify({ id: id, username: username, passwort: password}),
                 success: function (data) {

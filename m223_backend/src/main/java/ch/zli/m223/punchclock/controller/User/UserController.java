@@ -9,8 +9,11 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
 
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
@@ -46,10 +49,9 @@ public class UserController {
     }
 
     @DELETE
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public User delete(User user) {
-       return userService.deleteUser(user);
+    @Path("/{id}")
+    public void delete(@org.jboss.resteasy.annotations.jaxrs.PathParam Long id) {
+        userService.deleteUser(id);
     }
 
     @POST
