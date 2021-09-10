@@ -13,9 +13,7 @@ import javax.ws.rs.core.MediaType;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import ch.zli.m223.punchclock.domain.Company.Company;
-import ch.zli.m223.punchclock.domain.Department.Department;
 import ch.zli.m223.punchclock.service.Company.CompanyService;
-import ch.zli.m223.punchclock.service.Department.DepartmentService;
 
 
 @Path("/companys")

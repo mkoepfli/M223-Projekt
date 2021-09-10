@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c7c25a-f200-45a0-83dc-ed74abfe95cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/EntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/EntryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Department/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Department/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Entry/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Entry/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Holiday/Holiday.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/domain/Holiday/Holiday.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/EntryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/Holiday/HolidayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/service/Holiday/HolidayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/AuthentificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/SecuredController.java" beforeDir="false" afterPath="$PROJECT_DIR$/m223_backend/src/main/java/ch/zli/m223/punchclock/controller/SecuredController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +40,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +51,7 @@
       <workItem from="1631176153619" duration="5577000" />
       <workItem from="1631187003652" duration="8000" />
       <workItem from="1631187027210" duration="37000" />
-      <workItem from="1631189816937" duration="1659000" />
+      <workItem from="1631189816937" duration="2204000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1631176220041</created>
@@ -100,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631190267315</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added Controllers and changed id names">
+      <created>1631197708969</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631197708969</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +98,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added Models" />
     <MESSAGE value="removed EntryController" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed EntryController" />
+    <MESSAGE value="added Controllers and changed id names" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Controllers and changed id names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631187054064">
@@ -121,10 +110,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631180585847" />
-    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631190266401">
+    <state x="556" y="3" key="CommitChangelistDialog2" timestamp="1631197707878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631190266401" />
+    <state x="556" y="3" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1631197707878" />
     <state x="182" y="87" key="DiffContextDialog" timestamp="1631190255966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -133,10 +122,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1631187010264" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631190270419">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1631197718783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631190270419" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1631197718783" />
     <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1631192338408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,7 +1,5 @@
 package ch.zli.m223.punchclock.controller;
 
-import java.security.Principal;
-
 import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
 import javax.enterprise.context.RequestScoped;

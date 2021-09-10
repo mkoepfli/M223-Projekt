@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Punchclock Client</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="script.js" type="application/javascript"></script>
-    </head>
-    <body>
-        <form id="createEntryForm">
-            <label for="checkIn">Check in</label>
-            <input type="date" name="checkInDate" id="checkIn" required>
-            <input type="time" name="checkInTime" required>
-            <label for="checkOut">Check out</label>
-            <input type="date" name="checkOutDate" id="checkOut" required>
-            <input type="time" name="checkOutTime" required>
-            <input type="submit" value="Save" />
-        </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Check in</th>
-                    <th>Check out</th>
-                </tr>
-            </thead>
-            <tbody id="entryDisplay">
-                <tr>
-                    <td colspan="3">Loading...</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="index.js" type="application/javascript"></script>
+</head>
+
+<body>
+
+  <form id="form" method="post">
+
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+  <script>
+    $("#form").submit(function (e) {
+      e.preventDefault();
+
+      var form = $(this);
+      var username = this.username.value
+      var password = this.password.value
+      $("#form").submit(function (e) {
+      e.preventDefault();
+
+      var form = $(this);
+      var username = this.username.value
+      var password = this.password.value
+
+      $.ajax({
+        type: "POST",
+        url: "/auth/login",
+        contentType: "application/json",
+        data: JSON.stringify({ username: username, password: password }),
+        success: function (data) {
+          localStorage.setItem("bearer-token", data.token);
+          window.location.href = "http://localhost:8080/entries.html";
+        }
+      });
+    });
+    });
+  </script>
+</body>
+
 </html>

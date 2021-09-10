@@ -26,8 +26,6 @@ import io.smallrye.jwt.build.Jwt;
 @Path("/auth")
 public class AuthentificationController {
 
-    private Object Claims;
-
     @POST
     @Path("/login")
     @Produces(MediaType.APPLICATION_JSON)
@@ -38,6 +36,7 @@ public class AuthentificationController {
                     Jwt.issuer("https://zli.ch/issuer")
                             .upn("user@zli.ch")
                             .groups(new HashSet<>(Arrays.asList("User", "Admin")))
+                            .claim(Claims.birthdate.name(), "value")
                             .expiresIn(Duration.ofHours(1))
                             .sign();
             return new LoginResultViewModel(token);

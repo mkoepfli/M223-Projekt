@@ -2,6 +2,7 @@ package ch.zli.m223.punchclock.controller.Holiday;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -16,6 +17,7 @@ import ch.zli.m223.punchclock.service.Holiday.HolidayService;
 
 @Path("/holidays")
 @Tag(name = "Holiday", description = "Handling of holidays")
+@RolesAllowed({"User"})
 public class HolidayController {
 
     @Inject
